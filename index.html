@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html style=height:auto;>
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="images/#">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<!--FONT-->
+		<!--<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		-->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<!--slideshow-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	</head>
+	<body>
+		<header class="navbar">
+			<a></a>
+			<a href="interior.html">Interior</a>
+			<a href="exterior.html">Exterior</a>
+			<a href="contact.html">Contact</a>
+		</header>
+<!--
+		<div class="front">
+			<h1>
+				Introducting the all new <strong>Nissan Rogue</strong>
+			</h1>
+		</div>
+-->
+		<div class="slideshow">
+			<img class="mySlides w3-animate-right" src="images/sidea.jpg" atl="red nissan 1">
+			<img class="mySlides w3-animate-right" src="images/sideb.jpg" atl="red nissan 2">			<img class="mySlides w3-animate-right" src="images/sidec.jpg" atl="red nissan 3"><!--
+			<img class="mySlides w3-animate-right" src="images/#">
+			-->
+		<div class=caption><h1>Introducing The All New Nissan Rogue</h1></div>
+		</div>
+
+		<div class=desc>
+			<p>
+				This 2017 Nissan Rogue is now on for sale and could be yours to drive away today! It is one of the most spectacular cars Nissan has offered this year. Explore and discover the many aesthetic and security features this car has to offer!
+				<br> Dont't hesitate this car is for you!
+
+			</p>
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				  x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}
+				x[myIndex-1].style.display = "block";
+				setTimeout(carousel, 5000);
+			}
+		</script>
+	</body>
+</html>

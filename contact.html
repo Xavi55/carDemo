@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<title>Contact Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/#">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<!--FONT-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	</head>
+	<body>
+		<header class="navbar">
+					<a href="index.html">Home</a>
+					<a href="interior.html">Interior</a>
+					<a href="exterior.html">Exterior</a>
+					<a href="#"></a>
+		</header>
+		<main>
+			<div class="conPic" alt="interior_front" style=color:white;></div>
+			<div id=banner>
+				<h1>
+					This luxurious car can be yours today!<br>Do not hesistate to contact.
+				</h1>
+			</div>
+
+			<div class="panel cp1">
+				<div class=col2><h5 style=text-align:center>Call me at <br> Tel: 908-000-0000<br>.357@kevinGamez@g.com</h5>
+				</div>
+
+				<div class=col2>
+					<h3 style=text-align:center>Or contact me below.<br><br></h3>
+						<form action="mailto:123@yahoo.com" method=GET>
+							<input id=name type=text placeholder=Name name="subject">
+							<textarea id=body type=text placeholder=Content name="body" style=height:90px></textarea>
+							<input id=submit type=submit value=Submit onclick="okay()">
+						</form>
+				</div>
+
+			</div>
+			<h1><h1>
+		</main>
+	</body>
+	<script>
+		function okay()
+		{
+			if (document.getElementById("name").value==="" && document.getElementById("body").value=="")
+			alert("Nothing to Send");
+		}
+
+	</script>
+</html>

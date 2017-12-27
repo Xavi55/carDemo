@@ -33,9 +33,9 @@
 
 				<div class=col2>
 					<h3 style=text-align:center>Or contact me below.<br><br></h3>
-						<form action="mailto:123@yahoo.com" method=GET>
-							<input id=name type=text placeholder=Name name="subject">
-							<textarea id=body type=text placeholder=Content name="body" style=height:90px></textarea>
+						<form target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSffFONkM2rwb8JifIdohgxSuAaG9y36ZZqWyDR9CedXfGxsUQ/viewform?usp=pp_url&entry.1857529337=Name&entry.443736974=Body" method=GET>
+							<input id=name type=text placeholder=Name name="entry.1857529337">
+							<textarea id=body type=text placeholder=Content name="entry.443736974" style=height:90px></textarea>
 							<input id=submit type=submit value=Submit onclick="okay()">
 						</form>
 				</div>
@@ -45,11 +45,20 @@
 		</main>
 	</body>
 	<script>
+			var x=document.getElementById("name");
+			var y=document.getElementById("body");
+			var z=document.getElementById("submit");
 		function okay()
 		{
-			if (document.getElementById("name").value==="" && document.getElementById("body").value=="")
-			alert("Nothing to Send");
+			if (document.getElementById("body").value==="")
+			{
+				alert("Nothing to Send");
+			}
+			else
+			{
+				z.style.display = "none";
+				alert("Message Sent");
+			}
 		}
-
 	</script>
 </html>
